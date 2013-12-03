@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84376AC21818C6430058279E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84376AC11818C6430058279E /* OpenGL.framework */; };
+		84376AC41818C64B0058279E /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84376AC31818C64B0058279E /* IOKit.framework */; };
+		84376AC61818C6550058279E /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84376AC51818C6550058279E /* AppKit.framework */; };
+		84376AC81818C6620058279E /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84376AC71818C6620058279E /* libglfw3.a */; };
+		84CB4051184DAB910037F76E /* CameraSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CB402A184DAB910037F76E /* CameraSystem.cpp */; };
+		84CB4054184DAB910037F76E /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CB402F184DAB910037F76E /* Entity.cpp */; };
+		84CB4055184DAB910037F76E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CB4031184DAB910037F76E /* main.cpp */; };
+		84CB4056184DAB910037F76E /* MovementSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CB4032184DAB910037F76E /* MovementSystem.cpp */; };
+		84CB4057184DAB910037F76E /* ProgramManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CB4035184DAB910037F76E /* ProgramManager.cpp */; };
+		84CB4058184DAB910037F76E /* RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CB4037184DAB910037F76E /* RenderSystem.cpp */; };
+		84CB4059184DAB910037F76E /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CB4039184DAB910037F76E /* ResourceManager.cpp */; };
+		84CB405A184DAB910037F76E /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CB403B184DAB910037F76E /* Scene.cpp */; };
+		84CB405B184DAB910037F76E /* ShaderData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CB403D184DAB910037F76E /* ShaderData.cpp */; };
+		84CB405C184DAB910037F76E /* ShaderInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CB403F184DAB910037F76E /* ShaderInterface.cpp */; };
+		84CB405D184DAB910037F76E /* ShaderLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CB4041184DAB910037F76E /* ShaderLoader.cpp */; };
+		84CB4060184DAB910037F76E /* UserInputSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CB4047184DAB910037F76E /* UserInputSystem.cpp */; };
+		84CB4061184DAB910037F76E /* Vec3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CB4049184DAB910037F76E /* Vec3.cpp */; };
+		84CB4062184DAB910037F76E /* Vec4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CB404B184DAB910037F76E /* Vec4.cpp */; };
+		84CB4063184DAB910037F76E /* VertexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CB404D184DAB910037F76E /* VertexBuffer.cpp */; };
+		84CB4064184DAB910037F76E /* VertexDataPosn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CB404F184DAB910037F76E /* VertexDataPosn.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84376AB31818C6130058279E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		84376AB51818C6130058279E /* Assignment2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assignment2; sourceTree = BUILT_PRODUCTS_DIR; };
+		84376AC11818C6430058279E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		84376AC31818C64B0058279E /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		84376AC51818C6550058279E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		84376AC71818C6620058279E /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = Libraries/lib/libglfw3.a; sourceTree = "<group>"; };
+		84CB402A184DAB910037F76E /* CameraSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CameraSystem.cpp; sourceTree = "<group>"; };
+		84CB402B184DAB910037F76E /* CameraSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraSystem.h; sourceTree = "<group>"; };
+		84CB402C184DAB910037F76E /* ColorShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ColorShader.fsh; sourceTree = "<group>"; };
+		84CB402D184DAB910037F76E /* ColorShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ColorShader.vsh; sourceTree = "<group>"; };
+		84CB402E184DAB910037F76E /* CubeVertices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeVertices.h; sourceTree = "<group>"; };
+		84CB402F184DAB910037F76E /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
+		84CB4030184DAB910037F76E /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		84CB4031184DAB910037F76E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		84CB4032184DAB910037F76E /* MovementSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovementSystem.cpp; sourceTree = "<group>"; };
+		84CB4033184DAB910037F76E /* MovementSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovementSystem.h; sourceTree = "<group>"; };
+		84CB4034184DAB910037F76E /* PlaneVertices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaneVertices.h; sourceTree = "<group>"; };
+		84CB4035184DAB910037F76E /* ProgramManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProgramManager.cpp; sourceTree = "<group>"; };
+		84CB4036184DAB910037F76E /* ProgramManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramManager.h; sourceTree = "<group>"; };
+		84CB4037184DAB910037F76E /* RenderSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderSystem.cpp; sourceTree = "<group>"; };
+		84CB4038184DAB910037F76E /* RenderSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderSystem.h; sourceTree = "<group>"; };
+		84CB4039184DAB910037F76E /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceManager.cpp; sourceTree = "<group>"; };
+		84CB403A184DAB910037F76E /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceManager.h; sourceTree = "<group>"; };
+		84CB403B184DAB910037F76E /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
+		84CB403C184DAB910037F76E /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		84CB403D184DAB910037F76E /* ShaderData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderData.cpp; sourceTree = "<group>"; };
+		84CB403E184DAB910037F76E /* ShaderData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderData.h; sourceTree = "<group>"; };
+		84CB403F184DAB910037F76E /* ShaderInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderInterface.cpp; sourceTree = "<group>"; };
+		84CB4040184DAB910037F76E /* ShaderInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderInterface.h; sourceTree = "<group>"; };
+		84CB4041184DAB910037F76E /* ShaderLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderLoader.cpp; sourceTree = "<group>"; };
+		84CB4042184DAB910037F76E /* ShaderLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderLoader.h; sourceTree = "<group>"; };
+		84CB4043184DAB910037F76E /* SimpleLightShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SimpleLightShader.fsh; sourceTree = "<group>"; };
+		84CB4044184DAB910037F76E /* SimpleLightShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SimpleLightShader.vsh; sourceTree = "<group>"; };
+		84CB4045184DAB910037F76E /* SkyboxVertices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyboxVertices.h; sourceTree = "<group>"; };
+		84CB4046184DAB910037F76E /* TriangleVertices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleVertices.h; sourceTree = "<group>"; };
+		84CB4047184DAB910037F76E /* UserInputSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UserInputSystem.cpp; sourceTree = "<group>"; };
+		84CB4048184DAB910037F76E /* UserInputSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInputSystem.h; sourceTree = "<group>"; };
+		84CB4049184DAB910037F76E /* Vec3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vec3.cpp; sourceTree = "<group>"; };
+		84CB404A184DAB910037F76E /* Vec3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vec3.h; sourceTree = "<group>"; };
+		84CB404B184DAB910037F76E /* Vec4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vec4.cpp; sourceTree = "<group>"; };
+		84CB404C184DAB910037F76E /* Vec4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vec4.h; sourceTree = "<group>"; };
+		84CB404D184DAB910037F76E /* VertexBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VertexBuffer.cpp; sourceTree = "<group>"; };
+		84CB404E184DAB910037F76E /* VertexBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexBuffer.h; sourceTree = "<group>"; };
+		84CB404F184DAB910037F76E /* VertexDataPosn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VertexDataPosn.cpp; sourceTree = "<group>"; };
+		84CB4050184DAB910037F76E /* VertexDataPosn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexDataPosn.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84376AB21818C6130058279E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84376AC81818C6620058279E /* libglfw3.a in Frameworks */,
+				84376AC61818C6550058279E /* AppKit.framework in Frameworks */,
+				84376AC41818C64B0058279E /* IOKit.framework in Frameworks */,
+				84376AC21818C6430058279E /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84376AAC1818C6130058279E = {
+			isa = PBXGroup;
+			children = (
+				84CB4029184DAB910037F76E /* Assignment2 */,
+				84376AB61818C6130058279E /* Products */,
+				84376AC71818C6620058279E /* libglfw3.a */,
+				84376AC51818C6550058279E /* AppKit.framework */,
+				84376AC31818C64B0058279E /* IOKit.framework */,
+				84376AC11818C6430058279E /* OpenGL.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		84376AB61818C6130058279E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84376AB51818C6130058279E /* Assignment2 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84CB4029184DAB910037F76E /* Assignment2 */ = {
+			isa = PBXGroup;
+			children = (
+				84CB402A184DAB910037F76E /* CameraSystem.cpp */,
+				84CB402B184DAB910037F76E /* CameraSystem.h */,
+				84CB402C184DAB910037F76E /* ColorShader.fsh */,
+				84CB402D184DAB910037F76E /* ColorShader.vsh */,
+				84CB402E184DAB910037F76E /* CubeVertices.h */,
+				84CB402F184DAB910037F76E /* Entity.cpp */,
+				84CB4030184DAB910037F76E /* Entity.h */,
+				84CB4031184DAB910037F76E /* main.cpp */,
+				84CB4032184DAB910037F76E /* MovementSystem.cpp */,
+				84CB4033184DAB910037F76E /* MovementSystem.h */,
+				84CB4034184DAB910037F76E /* PlaneVertices.h */,
+				84CB4035184DAB910037F76E /* ProgramManager.cpp */,
+				84CB4036184DAB910037F76E /* ProgramManager.h */,
+				84CB4037184DAB910037F76E /* RenderSystem.cpp */,
+				84CB4038184DAB910037F76E /* RenderSystem.h */,
+				84CB4039184DAB910037F76E /* ResourceManager.cpp */,
+				84CB403A184DAB910037F76E /* ResourceManager.h */,
+				84CB403B184DAB910037F76E /* Scene.cpp */,
+				84CB403C184DAB910037F76E /* Scene.h */,
+				84CB403D184DAB910037F76E /* ShaderData.cpp */,
+				84CB403E184DAB910037F76E /* ShaderData.h */,
+				84CB403F184DAB910037F76E /* ShaderInterface.cpp */,
+				84CB4040184DAB910037F76E /* ShaderInterface.h */,
+				84CB4041184DAB910037F76E /* ShaderLoader.cpp */,
+				84CB4042184DAB910037F76E /* ShaderLoader.h */,
+				84CB4043184DAB910037F76E /* SimpleLightShader.fsh */,
+				84CB4044184DAB910037F76E /* SimpleLightShader.vsh */,
+				84CB4045184DAB910037F76E /* SkyboxVertices.h */,
+				84CB4046184DAB910037F76E /* TriangleVertices.h */,
+				84CB4047184DAB910037F76E /* UserInputSystem.cpp */,
+				84CB4048184DAB910037F76E /* UserInputSystem.h */,
+				84CB4049184DAB910037F76E /* Vec3.cpp */,
+				84CB404A184DAB910037F76E /* Vec3.h */,
+				84CB404B184DAB910037F76E /* Vec4.cpp */,
+				84CB404C184DAB910037F76E /* Vec4.h */,
+				84CB404D184DAB910037F76E /* VertexBuffer.cpp */,
+				84CB404E184DAB910037F76E /* VertexBuffer.h */,
+				84CB404F184DAB910037F76E /* VertexDataPosn.cpp */,
+				84CB4050184DAB910037F76E /* VertexDataPosn.h */,
+			);
+			path = Assignment2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84376AB41818C6130058279E /* Assignment2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84376ABE1818C6130058279E /* Build configuration list for PBXNativeTarget "Assignment2" */;
+			buildPhases = (
+				84376AB11818C6130058279E /* Sources */,
+				84376AB21818C6130058279E /* Frameworks */,
+				84376AB31818C6130058279E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Assignment2;
+			productName = Assignment1;
+			productReference = 84376AB51818C6130058279E /* Assignment2 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84376AAD1818C6130058279E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Jeff Einspahr";
+			};
+			buildConfigurationList = 84376AB01818C6130058279E /* Build configuration list for PBXProject "Assignment2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84376AAC1818C6130058279E;
+			productRefGroup = 84376AB61818C6130058279E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84376AB41818C6130058279E /* Assignment2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84376AB11818C6130058279E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CB4054184DAB910037F76E /* Entity.cpp in Sources */,
+				84CB4057184DAB910037F76E /* ProgramManager.cpp in Sources */,
+				84CB4056184DAB910037F76E /* MovementSystem.cpp in Sources */,
+				84CB405D184DAB910037F76E /* ShaderLoader.cpp in Sources */,
+				84CB4051184DAB910037F76E /* CameraSystem.cpp in Sources */,
+				84CB4063184DAB910037F76E /* VertexBuffer.cpp in Sources */,
+				84CB4055184DAB910037F76E /* main.cpp in Sources */,
+				84CB4060184DAB910037F76E /* UserInputSystem.cpp in Sources */,
+				84CB4062184DAB910037F76E /* Vec4.cpp in Sources */,
+				84CB4064184DAB910037F76E /* VertexDataPosn.cpp in Sources */,
+				84CB4058184DAB910037F76E /* RenderSystem.cpp in Sources */,
+				84CB4061184DAB910037F76E /* Vec3.cpp in Sources */,
+				84CB405B184DAB910037F76E /* ShaderData.cpp in Sources */,
+				84CB405C184DAB910037F76E /* ShaderInterface.cpp in Sources */,
+				84CB405A184DAB910037F76E /* Scene.cpp in Sources */,
+				84CB4059184DAB910037F76E /* ResourceManager.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		84376ABC1818C6130058279E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		84376ABD1818C6130058279E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		84376ABF1818C6130058279E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"Libraries/include/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/admin/Documents/CPSC486/Assignment1/Libraries/lib,
+					"Libraries/lib/**",
+				);
+				PRODUCT_NAME = Assignment2;
+			};
+			name = Debug;
+		};
+		84376AC01818C6130058279E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"Libraries/include/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/admin/Documents/CPSC486/Assignment1/Libraries/lib,
+					"Libraries/lib/**",
+				);
+				PRODUCT_NAME = Assignment2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84376AB01818C6130058279E /* Build configuration list for PBXProject "Assignment2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84376ABC1818C6130058279E /* Debug */,
+				84376ABD1818C6130058279E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84376ABE1818C6130058279E /* Build configuration list for PBXNativeTarget "Assignment2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84376ABF1818C6130058279E /* Debug */,
+				84376AC01818C6130058279E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84376AAD1818C6130058279E /* Project object */;
+}
