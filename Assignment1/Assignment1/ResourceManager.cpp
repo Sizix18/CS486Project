@@ -11,6 +11,7 @@
 #include "CubeVertices.h"
 #include "SkyboxVertices.h"
 #include "PlaneVertices.h"
+#include "pyramidVertices.h"
 
 std::vector<ShaderInterface*>* ResourceManager::getShaderArray()
 {
@@ -36,8 +37,12 @@ ResourceManager::ResourceManager()
     
     ShaderData* mintGreen = new ShaderData(makeVec4(.60f, 1.0f, 0.80f, 1.0f), makeVec3(0.0f, 0.0f, -5.0f));
     _shaderData->push_back(mintGreen);
-    ShaderData* skyBlue = new ShaderData(makeVec4(0.7f, 0.7f, 1.0f, 1.0f), makeVec3(0.0f, 0.0f, -10.0f));
+    ShaderData* skyBlue = new ShaderData(makeVec4(0.7f, 0.7f, 1.0f, 1.0f), makeVec3(0.0f, 0.0f, -50.0f));
     _shaderData->push_back(skyBlue);
+    ShaderData* orange = new ShaderData(makeVec4(1.0f, .50f, 0.0f, 1.0f),makeVec3(0.0f, 0.0f, 5.0f));
+    _shaderData->push_back(orange);
+    ShaderData* red = new ShaderData(makeVec4(1.0f, .2f, .2f, 1.0f), makeVec3(0.0f, 4.0f, 10.0f));
+    _shaderData->push_back(red);
 
     
     
@@ -59,7 +64,7 @@ ResourceManager::ResourceManager()
                                                       36,
                                                       sizeof(VertexDataPosnNorm),
                                                       _shaderArray->at(1),
-                                                      _shaderData->at(0),
+                                                      _shaderData->at(2),
                                                       (GLvoid*)(offsetof(VertexDataPosnNorm, positionCoordinates)),
                                                       (GLvoid*)(offsetof(VertexDataPosnNorm, normalCoordinates)));
     _vertexBufferArray->push_back(cubeVertexBuffer);
@@ -69,8 +74,8 @@ ResourceManager::ResourceManager()
                                                         GL_QUADS,
                                                         24,
                                                         sizeof(VertexDataPosn),
-                                                        _shaderArray->at(0),
-                                                        _shaderData->at(0),
+                                                        _shaderArray->at(1),
+                                                        _shaderData->at(1),
                                                         NULL,
                                                         NULL);
     _vertexBufferArray->push_back(skyboxVertexBuffer);
@@ -85,7 +90,18 @@ ResourceManager::ResourceManager()
                                                        NULL,
                                                        NULL);
     _vertexBufferArray->push_back(groundPlaneBuffer);
-
+    VertexBuffer *pyramidbuffer = new VertexBuffer(pyramidVertices,
+                                                   sizeof(pyramidVertices),
+                                                   GL_TRIANGLES,
+                                                   18,
+                                                   sizeof(VertexDataPosn),
+                                                   _shaderArray->at(1),
+                                                   _shaderData->at(3),
+                                                   NULL,
+                                                   NULL);
+    _vertexBufferArray->push_back(pyramidbuffer);
+    
+    
 }
 
 ResourceManager::~ResourceManager()

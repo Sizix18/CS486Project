@@ -47,10 +47,12 @@ void ProgramManager::runProgramLoop()
             }
             if (glfwGetKey(_window, GLFW_KEY_UP)) {
                 _cameraSystem->getCurrentCamera()->setPosition(makeVec3(_cameraSystem->getCurrentCamera()->getPosition().x, _cameraSystem->getCurrentCamera()->getPosition().y, (_cameraSystem->getCurrentCamera()->getPosition().z + 0.10)));
+                //_cameraSystem->getCurrentCamera()->setPosition(makeVec3(_cameraSystem->getCurrentCamera()->getEyeVec().x, _cameraSystem->getCurrentCamera()->getEyeVec().y, (_cameraSystem->getCurrentCamera()->getEyeVec().z + 0.10)));
                 
             }
             if (glfwGetKey(_window, GLFW_KEY_DOWN)) {
                 _cameraSystem->getCurrentCamera()->setPosition(makeVec3(_cameraSystem->getCurrentCamera()->getPosition().x, _cameraSystem->getCurrentCamera()->getPosition().y, (_cameraSystem->getCurrentCamera()->getPosition().z - 0.10)));
+                //_cameraSystem->getCurrentCamera()->setPosition(makeVec3(_cameraSystem->getCurrentCamera()->getEyeVec().x, _cameraSystem->getCurrentCamera()->getEyeVec().y, (_cameraSystem->getCurrentCamera()->getEyeVec().z + 0.10)));
 
             }
             

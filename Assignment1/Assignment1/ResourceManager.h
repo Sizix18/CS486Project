@@ -11,6 +11,8 @@
 
 #include <iostream>
 #include <vector>
+#define GLFW_INCLUDE_GLU
+
 #include "ShaderInterface.h"
 #include "VertexBuffer.h"
 #include "ShaderData.h"

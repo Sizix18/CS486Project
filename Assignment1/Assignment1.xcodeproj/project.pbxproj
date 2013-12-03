@@ -88,6 +88,7 @@
 		843FEEAE1841BCBE002C3DAD /* RenderSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderSystem.h; sourceTree = "<group>"; };
 		8469B6BD184ABCBB00A55E30 /* UserInputSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UserInputSystem.cpp; sourceTree = "<group>"; };
 		8469B6BE184ABCBB00A55E30 /* UserInputSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInputSystem.h; sourceTree = "<group>"; };
+		84CB4065184DAF6C0037F76E /* pyramidVertices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pyramidVertices.h; sourceTree = "<group>"; };
 		84EC16671842B2FE00900E3E /* TriangleVertices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleVertices.h; sourceTree = "<group>"; };
 		84EC16681842B71100900E3E /* Vec3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vec3.cpp; sourceTree = "<group>"; };
 		84EC16691842B71100900E3E /* Vec3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vec3.h; sourceTree = "<group>"; };
@@ -180,6 +181,7 @@
 				84EC16721842EB7E00900E3E /* CubeVertices.h */,
 				84377FD81843E2280083EE6D /* SkyboxVertices.h */,
 				84377FDA184578820083EE6D /* PlaneVertices.h */,
+				84CB4065184DAF6C0037F76E /* pyramidVertices.h */,
 			);
 			name = Vertices;
 			sourceTree = "<group>";
@@ -360,7 +362,6 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/admin/Documents/CPSC486/Assignment1/Libraries/lib,
 					"Libraries/lib/**",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -377,7 +378,6 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/admin/Documents/CPSC486/Assignment1/Libraries/lib,
 					"Libraries/lib/**",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
