@@ -25,14 +25,14 @@ void UserInputSystem::keyCallback(GLFWwindow *window,
 {
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
     {
-        if (GLFW_CURSOR_DISABLED == glfwGetInputMode(glfwGetCurrentContext(), GLFW_CURSOR ))
+        /*if (GLFW_CURSOR_DISABLED == glfwGetInputMode(glfwGetCurrentContext(), GLFW_CURSOR ))
         {
             glfwSetInputMode(glfwGetCurrentContext(), GLFW_CURSOR, GLFW_CURSOR_NORMAL);
         }
         else
         {
             glfwSetInputMode(glfwGetCurrentContext(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-        }
+        }*/
     }
 }
 

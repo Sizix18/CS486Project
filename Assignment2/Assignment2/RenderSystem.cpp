@@ -39,7 +39,7 @@ void RenderSystem::render(std::vector<Entity *> *entityArray)
             
         glUseProgram(entity->getVertexBuffer()->getShader()->getProgramHandle());
         glBindBuffer(GL_ARRAY_BUFFER, entity->getVertexBuffer()->getVertexBufferID());
-            glLoadIdentity();
+        glLoadIdentity();
             
             gluLookAt(_currentCamera->getPosition().x,
                       _currentCamera->getPosition().y,
@@ -52,7 +52,23 @@ void RenderSystem::render(std::vector<Entity *> *entityArray)
                       _currentCamera->getUpVec().z);
             
             
+            
             glTranslatef(entity->getPosition().x, entity->getPosition().y, entity->getPosition().z);
+            if (entity->getPosition().x >= 0.9 && entity->getVelocity().x > 0.0f) {
+                entity->setVelocity(makeVec3((-1 * entity->getVelocity().x), entity->getVelocity().y, entity->getVelocity().z));
+            }
+            if (entity->getPosition().x <= -0.9 && entity->getVelocity().x < 0.0f) {
+                entity->setVelocity(makeVec3((-1 * entity->getVelocity().x), entity->getVelocity().y, entity->getVelocity().z));
+            }
+            if (entity->getPosition().x >= 0.9 && entity->getVelocity().x > 0.0f) {
+                entity->setVelocity(makeVec3((-1 * entity->getVelocity().x), entity->getVelocity().y, entity->getVelocity().z));
+            }
+            if (entity->getPosition().y >= 0.9 && entity->getVelocity().y > 0.0f) {
+                entity->setVelocity(makeVec3( entity->getVelocity().x, (-1 *entity->getVelocity().y), entity->getVelocity().z));
+            }
+            if (entity->getPosition().y <= -0.9 && entity->getVelocity().y < 0.0f) {
+                entity->setVelocity(makeVec3( entity->getVelocity().x, (-1 *entity->getVelocity().y), entity->getVelocity().z));
+            }
             
             glRotatef(entity->getRotation().x, 0.0f, 0.0f, 1.0f);
             glRotatef(entity->getRotation().y, 0.0f, 1.0f, 0.0f);
@@ -93,8 +109,10 @@ RenderSystem& RenderSystem::getRenderSystem()
         glClearColor(0.5f, 0.5f, 1.0f, 1.0f);
         
         glMatrixMode(GL_PROJECTION);
-        gluPerspective(75.0f, 1280.0f/720.0f, 1, 1000);
-        glViewport(0.0f, 0.0f, 1280.0f, 720.0f);
+        glOrtho(-1, 1, -1, 1, -1, 1);
+        //gluOrtho2D(10, 10, 10, 10);
+        //gluPerspective(75.0f, 1280.0f/720.0f, -1, 1);
+        glViewport(0.0f, 0.0f, 800.0f, 800.0f);
         glMatrixMode(GL_MODELVIEW);
         glEnable(GL_CULL_FACE);
         glEnable(GL_DEPTH_TEST);

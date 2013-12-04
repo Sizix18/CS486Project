@@ -17,8 +17,8 @@ _renderSystem(&RenderSystem::getRenderSystem()),
 _resourceManager(&ResourceManager::getResourceManager()),
 _movementSystem(&MovementSystem::getMovementSystem()),
 _cameraSystem(&CameraSystem::getCameraSystem()),
-scene(new Scene),
-_userInputSystem(&UserInputSystem::getUserInputSystem())
+scene(new Scene)
+//_userInputSystem(&UserInputSystem::getUserInputSystem())
 {
 }
 
@@ -45,16 +45,11 @@ void ProgramManager::runProgramLoop()
             if (glfwGetKey(_window, GLFW_KEY_Q)) {
                 _running = false;
             }
-            if (glfwGetKey(_window, GLFW_KEY_UP)) {
-                _cameraSystem->getCurrentCamera()->setPosition(makeVec3(_cameraSystem->getCurrentCamera()->getPosition().x, _cameraSystem->getCurrentCamera()->getPosition().y, (_cameraSystem->getCurrentCamera()->getPosition().z + 0.10)));
-                //_cameraSystem->getCurrentCamera()->setPosition(makeVec3(_cameraSystem->getCurrentCamera()->getEyeVec().x, _cameraSystem->getCurrentCamera()->getEyeVec().y, (_cameraSystem->getCurrentCamera()->getEyeVec().z + 0.10)));
-                
-            }
-            if (glfwGetKey(_window, GLFW_KEY_DOWN)) {
-                _cameraSystem->getCurrentCamera()->setPosition(makeVec3(_cameraSystem->getCurrentCamera()->getPosition().x, _cameraSystem->getCurrentCamera()->getPosition().y, (_cameraSystem->getCurrentCamera()->getPosition().z - 0.10)));
-                //_cameraSystem->getCurrentCamera()->setPosition(makeVec3(_cameraSystem->getCurrentCamera()->getEyeVec().x, _cameraSystem->getCurrentCamera()->getEyeVec().y, (_cameraSystem->getCurrentCamera()->getEyeVec().z + 0.10)));
-
-            }
+            
+            /*if (entity->getPosition().x == 0.9f && entity->getVelocity().x > 0.0f) {
+                std::cout << "Hello" << std::endl;
+                entity->setVelocity(makeVec3((-1 * entity->getVelocity().x), entity->getVelocity().y, entity->getVelocity().z));
+            }*/
             
             _movementSystem->update(scene->getChildren());
             
@@ -83,7 +78,7 @@ ProgramManager& ProgramManager::getProgramManager()
         
         glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
         
-        GLFWwindow *window = glfwCreateWindow(1280, 720, "OpenGL Program", NULL, NULL);
+        GLFWwindow *window = glfwCreateWindow(800, 800, "OpenGL Program", NULL, NULL);
         glfwMakeContextCurrent(window);
         programManager = new ProgramManager(true);
         std::cout << "Program Created\n";

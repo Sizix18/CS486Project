@@ -51,7 +51,6 @@
 		84CB402B184DAB910037F76E /* CameraSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraSystem.h; sourceTree = "<group>"; };
 		84CB402C184DAB910037F76E /* ColorShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ColorShader.fsh; sourceTree = "<group>"; };
 		84CB402D184DAB910037F76E /* ColorShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ColorShader.vsh; sourceTree = "<group>"; };
-		84CB402E184DAB910037F76E /* CubeVertices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeVertices.h; sourceTree = "<group>"; };
 		84CB402F184DAB910037F76E /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
 		84CB4030184DAB910037F76E /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
 		84CB4031184DAB910037F76E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -74,8 +73,6 @@
 		84CB4042184DAB910037F76E /* ShaderLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderLoader.h; sourceTree = "<group>"; };
 		84CB4043184DAB910037F76E /* SimpleLightShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SimpleLightShader.fsh; sourceTree = "<group>"; };
 		84CB4044184DAB910037F76E /* SimpleLightShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SimpleLightShader.vsh; sourceTree = "<group>"; };
-		84CB4045184DAB910037F76E /* SkyboxVertices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyboxVertices.h; sourceTree = "<group>"; };
-		84CB4046184DAB910037F76E /* TriangleVertices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleVertices.h; sourceTree = "<group>"; };
 		84CB4047184DAB910037F76E /* UserInputSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UserInputSystem.cpp; sourceTree = "<group>"; };
 		84CB4048184DAB910037F76E /* UserInputSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInputSystem.h; sourceTree = "<group>"; };
 		84CB4049184DAB910037F76E /* Vec3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vec3.cpp; sourceTree = "<group>"; };
@@ -128,45 +125,82 @@
 			children = (
 				84CB402A184DAB910037F76E /* CameraSystem.cpp */,
 				84CB402B184DAB910037F76E /* CameraSystem.h */,
-				84CB402C184DAB910037F76E /* ColorShader.fsh */,
-				84CB402D184DAB910037F76E /* ColorShader.vsh */,
-				84CB402E184DAB910037F76E /* CubeVertices.h */,
+				84F2CBE0184E76BA00998E08 /* Vertices */,
 				84CB402F184DAB910037F76E /* Entity.cpp */,
 				84CB4030184DAB910037F76E /* Entity.h */,
 				84CB4031184DAB910037F76E /* main.cpp */,
-				84CB4032184DAB910037F76E /* MovementSystem.cpp */,
-				84CB4033184DAB910037F76E /* MovementSystem.h */,
-				84CB4034184DAB910037F76E /* PlaneVertices.h */,
+				84F2CBE2184E76E700998E08 /* Systems */,
 				84CB4035184DAB910037F76E /* ProgramManager.cpp */,
 				84CB4036184DAB910037F76E /* ProgramManager.h */,
-				84CB4037184DAB910037F76E /* RenderSystem.cpp */,
-				84CB4038184DAB910037F76E /* RenderSystem.h */,
 				84CB4039184DAB910037F76E /* ResourceManager.cpp */,
 				84CB403A184DAB910037F76E /* ResourceManager.h */,
 				84CB403B184DAB910037F76E /* Scene.cpp */,
 				84CB403C184DAB910037F76E /* Scene.h */,
-				84CB403D184DAB910037F76E /* ShaderData.cpp */,
-				84CB403E184DAB910037F76E /* ShaderData.h */,
-				84CB403F184DAB910037F76E /* ShaderInterface.cpp */,
-				84CB4040184DAB910037F76E /* ShaderInterface.h */,
-				84CB4041184DAB910037F76E /* ShaderLoader.cpp */,
-				84CB4042184DAB910037F76E /* ShaderLoader.h */,
-				84CB4043184DAB910037F76E /* SimpleLightShader.fsh */,
-				84CB4044184DAB910037F76E /* SimpleLightShader.vsh */,
-				84CB4045184DAB910037F76E /* SkyboxVertices.h */,
-				84CB4046184DAB910037F76E /* TriangleVertices.h */,
-				84CB4047184DAB910037F76E /* UserInputSystem.cpp */,
-				84CB4048184DAB910037F76E /* UserInputSystem.h */,
-				84CB4049184DAB910037F76E /* Vec3.cpp */,
-				84CB404A184DAB910037F76E /* Vec3.h */,
-				84CB404B184DAB910037F76E /* Vec4.cpp */,
-				84CB404C184DAB910037F76E /* Vec4.h */,
+				84F2CBDE184E768F00998E08 /* Shader Code */,
+				84F2CBE1184E76D300998E08 /* Vectors */,
 				84CB404D184DAB910037F76E /* VertexBuffer.cpp */,
 				84CB404E184DAB910037F76E /* VertexBuffer.h */,
 				84CB404F184DAB910037F76E /* VertexDataPosn.cpp */,
 				84CB4050184DAB910037F76E /* VertexDataPosn.h */,
 			);
 			path = Assignment2;
+			sourceTree = "<group>";
+		};
+		84F2CBDE184E768F00998E08 /* Shader Code */ = {
+			isa = PBXGroup;
+			children = (
+				84CB403D184DAB910037F76E /* ShaderData.cpp */,
+				84CB403E184DAB910037F76E /* ShaderData.h */,
+				84CB403F184DAB910037F76E /* ShaderInterface.cpp */,
+				84CB4040184DAB910037F76E /* ShaderInterface.h */,
+				84CB4041184DAB910037F76E /* ShaderLoader.cpp */,
+				84CB4042184DAB910037F76E /* ShaderLoader.h */,
+				84F2CBDF184E769F00998E08 /* Shaders */,
+			);
+			name = "Shader Code";
+			sourceTree = "<group>";
+		};
+		84F2CBDF184E769F00998E08 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				84CB402C184DAB910037F76E /* ColorShader.fsh */,
+				84CB402D184DAB910037F76E /* ColorShader.vsh */,
+				84CB4043184DAB910037F76E /* SimpleLightShader.fsh */,
+				84CB4044184DAB910037F76E /* SimpleLightShader.vsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		84F2CBE0184E76BA00998E08 /* Vertices */ = {
+			isa = PBXGroup;
+			children = (
+				84CB4034184DAB910037F76E /* PlaneVertices.h */,
+			);
+			name = Vertices;
+			sourceTree = "<group>";
+		};
+		84F2CBE1184E76D300998E08 /* Vectors */ = {
+			isa = PBXGroup;
+			children = (
+				84CB4049184DAB910037F76E /* Vec3.cpp */,
+				84CB404A184DAB910037F76E /* Vec3.h */,
+				84CB404B184DAB910037F76E /* Vec4.cpp */,
+				84CB404C184DAB910037F76E /* Vec4.h */,
+			);
+			name = Vectors;
+			sourceTree = "<group>";
+		};
+		84F2CBE2184E76E700998E08 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				84CB4032184DAB910037F76E /* MovementSystem.cpp */,
+				84CB4033184DAB910037F76E /* MovementSystem.h */,
+				84CB4037184DAB910037F76E /* RenderSystem.cpp */,
+				84CB4038184DAB910037F76E /* RenderSystem.h */,
+				84CB4047184DAB910037F76E /* UserInputSystem.cpp */,
+				84CB4048184DAB910037F76E /* UserInputSystem.h */,
+			);
+			name = Systems;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

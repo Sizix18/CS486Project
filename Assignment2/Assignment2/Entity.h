@@ -53,4 +53,9 @@ public:
     Entity(VertexBuffer *vertexBuffer, Vec3 newPosition);
     ~Entity();
 };
+
+class Square:Entity {
+public:
+    std::vector<Vec3*> edge_normals;
+};
 #endif /* defined(__Assignment1__Entity__) */
